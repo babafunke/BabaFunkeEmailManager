@@ -1,0 +1,33 @@
+﻿@model Subscriber
+
+<div>
+    <h2>Subscriber Detail</h2>
+
+    <p></p>
+    <div class="col-md-9">
+        <div>
+            <label class="col-md-3" asp-for="@Model.Id"></label>
+            <input class="col-md-6" asp-for="@Model.Id" />
+        </div>
+        <div>
+            <label class="col-md-3" asp-for="@Model.Firstname"></label>
+            <input class="col-md-6" asp-for="@Model.Firstname" />
+        </div>
+        <div>
+            <label class="col-md-3" asp-for="@Model.Lastname"></label>
+            <input class="col-md-6" asp-for="@Model.Lastname" />
+        </div>
+        <div>
+            <label class="col-md-3" asp-for="@Model.Email"></label>
+            <input class="col-md-6" asp-for="@Model.Email" />
+        </div>
+        <div>
+            <label class="col-md-3" asp-for="@Model.SubCategory"></label>
+            <input class="col-md-6" asp-for="@Model.SubCategory" />
+        </div>
+        <div>
+            <label class="col-md-3" asp-for="@Model.IsSubscribed"></label>
+            <input class="col-md-6" asp-for="@Model.IsSubscribed" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+﻿@model Newsletter
+
+<div>
+    <h2>Edit Newsletter</h2>
+
+    <p></p>
+    <form method="post">
+        <div class="col-md-9">
+            <input hidden asp-for="@Model.NewsletterId" />
+            <div>
+                <label class="col-md-3" asp-for="@Model.Subject"></label>
+                <input class="col-md-6" asp-for="@Model.Subject" />
+            </div>
+            <div>
+                <label class="col-md-3" asp-for="@Model.Body"></label>
+                <textarea class="col-md-6" asp-for="@Model.Body"></textarea>
+            </div>
+            <div>
+                <button type="submit">Save</button>
+            </div>
+        </div>
+
+    </form>
+</div>

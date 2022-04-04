@@ -1,0 +1,30 @@
+﻿@model RequestHeader
+
+<div>
+    <h2>Request Detail</h2>
+
+    <p></p>
+    <div class="col-md-9">
+        <div>
+            <label class="col-md-3" asp-for="@Model.RequestHeaderId"></label>
+            <input class="col-md-6" asp-for="@Model.RequestHeaderId" />
+        </div>
+        <div>
+            <label class="col-md-3" asp-for="@Model.NewsletterId"></label>
+            <input class="col-md-6" asp-for="@Model.NewsletterId" />
+        </div>
+        <div>
+            <label class="col-md-3" asp-for="@Model.SubscriberSubCategory"></label>
+            <input class="col-md-6" asp-for="@Model.SubscriberSubCategory" />
+        </div>
+        <div>
+            <label class="col-md-3" asp-for="@Model.CreatedOn"></label>
+            <input class="col-md-6" asp-for="@Model.CreatedOn" />
+        </div>
+        <div>
+            <label class="col-md-3" asp-for="@Model.IsActive"></label>
+            <input type="checkbox" class="col-md-6" asp-for="@Model.IsActive" />
+        </div>
+
+    </div>
+</div>

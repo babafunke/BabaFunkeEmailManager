@@ -1,0 +1,24 @@
+﻿@model RequestHeader
+
+<div>
+    <h2>Create Request</h2>
+
+    <p></p>
+    <form method="post">
+        <div class="col-md-9">
+            <div>
+                <label class="col-md-3" asp-for="NewsletterId"></label>
+                <select class="col-md-6" asp-for="NewsletterId" asp-items="@ViewBag.Newsletters"></select>
+            </div>
+            <div>
+                <label class="col-md-3" asp-for="SubscriberSubCategory"></label>
+                <select class="col-md-6" asp-for="SubscriberSubCategory" asp-items="@ViewBag.SubscriberCategories"></select>
+            </div>
+            <div class="col-md-3 offset-3">
+                <button class="btn btn-primary" type="submit">Save</button>
+                <a class="btn btn-secondary text-white" asp-action="Index">Cancel</a>
+            </div>
+        </div>
+
+    </form>
+</div>

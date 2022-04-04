@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BabaFunkeEmailManager.Client", "BabaFunkeEmailManager.Client\BabaFunkeEmailManager.Client.csproj", "{DE6D7269-39EA-466C-A27C-CFA9AA008356}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BabaFunkeEmailManager.Data", "BabaFunkeEmailManager.Data\BabaFunkeEmailManager.Data.csproj", "{AFD069A8-720C-4781-A260-9BC84A3FA487}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BabaFunkeEmailManager.Functions", "BabaFunkeEmailManager.Functions\BabaFunkeEmailManager.Functions.csproj", "{43F2B881-071A-4463-9A5B-EB807065C66B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BabaFunkeEmailManager.Service", "BabaFunkeEmailManager.Service\BabaFunkeEmailManager.Service.csproj", "{A1D36575-6E67-49EF-8F6F-4E20E71C1EA5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BabaFunkeEmailManager.Tests", "BabaFunkeEmailManager.Tests\BabaFunkeEmailManager.Tests.csproj", "{BA2CCA6E-E155-47DD-8223-52C65373F0BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BabaFunkeEmailManager.Webjob", "BabaFunkeEmailManager.Webjob\BabaFunkeEmailManager.Webjob.csproj", "{67686B26-0B3D-4825-8CA3-C4D94DFDBCDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE6D7269-39EA-466C-A27C-CFA9AA008356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6D7269-39EA-466C-A27C-CFA9AA008356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6D7269-39EA-466C-A27C-CFA9AA008356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6D7269-39EA-466C-A27C-CFA9AA008356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFD069A8-720C-4781-A260-9BC84A3FA487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD069A8-720C-4781-A260-9BC84A3FA487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD069A8-720C-4781-A260-9BC84A3FA487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD069A8-720C-4781-A260-9BC84A3FA487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43F2B881-071A-4463-9A5B-EB807065C66B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F2B881-071A-4463-9A5B-EB807065C66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F2B881-071A-4463-9A5B-EB807065C66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F2B881-071A-4463-9A5B-EB807065C66B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D36575-6E67-49EF-8F6F-4E20E71C1EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D36575-6E67-49EF-8F6F-4E20E71C1EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D36575-6E67-49EF-8F6F-4E20E71C1EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D36575-6E67-49EF-8F6F-4E20E71C1EA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2CCA6E-E155-47DD-8223-52C65373F0BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2CCA6E-E155-47DD-8223-52C65373F0BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2CCA6E-E155-47DD-8223-52C65373F0BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2CCA6E-E155-47DD-8223-52C65373F0BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67686B26-0B3D-4825-8CA3-C4D94DFDBCDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67686B26-0B3D-4825-8CA3-C4D94DFDBCDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67686B26-0B3D-4825-8CA3-C4D94DFDBCDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67686B26-0B3D-4825-8CA3-C4D94DFDBCDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06275DFF-ED11-43D2-B270-EF7DBAA70E29}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<EmailResponse>
+
+
+<div>
+    <h2>All Reports</h2>
+    
+    <p></p>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>RequestHeader Id</td>
+                <td>Status</td>
+                <td>Email</td>
+                <td>ErrorMessages</td>
+                <td>DateCreated</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.RequestHeaderId</td>
+                    <td>@item.Status</td>
+                    <td>@item.Email</td>
+                    <td>@item.ErrorMessages</td>
+                    <td>@item.DateCreated</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

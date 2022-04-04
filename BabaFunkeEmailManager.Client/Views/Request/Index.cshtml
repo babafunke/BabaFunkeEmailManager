@@ -1,0 +1,36 @@
+﻿@model IEnumerable<RequestHeader>
+
+
+<div>
+    <h2>All Subscribers</h2>
+    <a class="btn btn-primary text-white" asp-action="Create">Add New Request</a>
+    <p></p>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Newsletter</td>
+                <td>Subscriber Category</td>
+                <td>Created On</td>
+                <td>IsActive</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.RequestHeaderId</td>
+                <td>@item.NewsletterId</td>
+                <td>@item.SubscriberSubCategory</td>
+                <td>@item.CreatedOn</td>
+                <td>@item.IsActive</td>
+
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.RequestHeaderId">Delete</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

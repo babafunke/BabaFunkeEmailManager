@@ -1,0 +1,24 @@
+﻿@model Subscriber
+
+<div>
+    <h2>Edit Subscriber</h2>
+
+    <p></p>
+    <form method="post">
+        <div class="col-md-9">
+            <input hidden asp-for="@Model.Email" />
+            <div>
+                <label class="col-md-3" asp-for="@Model.Firstname"></label>
+                <input class="col-md-6" asp-for="@Model.Firstname" />
+            </div>
+            <div>
+                <label class="col-md-3" asp-for="@Model.Lastname"></label>
+                <input class="col-md-6" asp-for="@Model.Lastname" />
+            </div>
+            <div>
+                <button type="submit">Save</button>
+            </div>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Newsletter>
+
+
+<div>
+    <h2>All Newsletters</h2>
+    <a class="btn btn-primary text-white" asp-action="Create">Create Newsletter</a>
+    <p></p>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Category</td>
+                <td>Subject</td>
+                <td>Body</td>
+                <td>IsEnabled</td>
+                <td>Created On</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.NewsletterId</td>
+                    <td>@item.Category</td>
+                    <td>@item.Subject</td>
+                    <td>@item.Body</td>
+                    <td>@item.IsEnabled</td>
+                    <td>@item.CreatedOn</td>
+
+                    <td>
+                        <a asp-action="Detail" asp-route-id="@item.NewsletterId">Details</a> |
+                        <a asp-action="Edit" asp-route-id="@item.NewsletterId">Edit</a> |
+                        <a asp-action="Delete" asp-route-id="@item.NewsletterId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

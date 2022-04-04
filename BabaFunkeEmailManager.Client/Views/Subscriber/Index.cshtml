@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Subscriber>
+
+
+<div>
+    <h2>All Subscribers</h2>
+    <a class="btn btn-primary text-white" asp-action="Create">Add New Subscriber</a>
+    <p></p>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Email</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Sub-Category</td>
+                <td>Subscribed</td>
+                <td>Subscribed On</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Email</td>
+                    <td>@item.Firstname</td>
+                    <td>@item.Lastname</td>
+                    <td>@item.SubCategory</td>
+                    <td>@item.IsSubscribed</td>
+                    <td>@item.SubscribedOn.ToShortDateString()</td>
+
+                    <td>
+                        <a asp-action="Detail" asp-route-email="@item.Email">Details</a> |
+                        <a asp-action="Edit" asp-route-email="@item.Email">Edit</a> |
+                        @if(item.IsSubscribed)
+                        {
+                            <a asp-action="Unsubscribe" asp-route-email="@item.Email">Unsubscribe</a>
+                        }
+                        else
+                        {
+                            <a asp-action="Delete" asp-route-email="@item.Email">Delete</a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
